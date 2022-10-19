@@ -7,14 +7,14 @@ function onFormSubmit(event) {
   const formData = new FormData(event.currentTarget);
   const email = event.currentTarget.elements.email.value;
   const password = event.currentTarget.elements.password.value;
-  if (email.length && password.length) {
-    formData.forEach((value, name) => {
-      obj.push(value)
-      obj.push(name)
+  if (email && password) {
+    formData.forEach((email, password) => {
+      obj.push(email,password)
+  
       console.log(obj);
-  });}
-  //   form.reset();
-  // } else {
-  //   alert("Заповніть, будь ласка, всі поля форми!");
-  // }
+  });
+    form.reset();
+  } else {
+    alert("Заповніть, будь ласка, всі поля форми!");
+  }
 }
