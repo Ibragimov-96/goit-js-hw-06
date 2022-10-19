@@ -7,34 +7,41 @@ const ingredients = [
   'Condiments',
 ];
 const list = document.querySelector('#ingredients')
-const potatoes = document.createElement('li')
-potatoes.textContent = 'Potatoes'
-potatoes.classList.add('item')
-list.append(potatoes)
+const ing = document.createElement('li')
+console.log(ing)
+const newIngridients = ingredients.map((ingredient) => `<li>${ingredient}</li>`).join("\n")
+ing.innerHTML = newIngridients;
+list.appendChild(ing);
 
-const mushrooms = document.createElement('li')
-mushrooms.textContent = 'Mushrooms'
-mushrooms.classList.add('item')
-list.append(mushrooms)
 
-const garlic = document.createElement('li')
-garlic.textContent = 'Garlic'
-garlic.classList.add('item')
-list.append(garlic)
+// const potatoes = document.createElement('li')
+// potatoes.textContent = 'Potatoes'
+// potatoes.classList.add('item')
+// list.append(potatoes)
 
-const tomatos = document.createElement('li')
-tomatos.textContent = 'Tomatos'
-tomatos.classList.add('item')
-list.append(tomatos)
+// const mushrooms = document.createElement('li')
+// mushrooms.textContent = 'Mushrooms'
+// mushrooms.classList.add('item')
+// list.append(mushrooms)
 
-const herbs = document.createElement('li')
-herbs.textContent = 'Herbs'
-herbs.classList.add('item')
-list.append(herbs)
+// const garlic = document.createElement('li')
+// garlic.textContent = 'Garlic'
+// garlic.classList.add('item')
+// list.append(garlic)
 
-const condiments = document.createElement('li')
-condiments.textContent = 'Condiments'
-condiments.classList.add('item')
-list.append(condiments)
+// const tomatos = document.createElement('li')
+// tomatos.textContent = 'Tomatos'
+// tomatos.classList.add('item')
+// list.append(tomatos)
 
-console.log(list)
+// const herbs = document.createElement('li')
+// herbs.textContent = 'Herbs'
+// herbs.classList.add('item')
+// list.append(herbs)
+
+// const condiments = document.createElement('li')
+// condiments.textContent = 'Condiments'
+// condiments.classList.add('item')
+// list.append(condiments)
+
+// console.log(list)
